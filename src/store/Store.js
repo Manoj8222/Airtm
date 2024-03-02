@@ -1,7 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { airtmSlice } from "./Slice";
+import airtmReducer from "./Slice";
 const Store = configureStore({
-  reducer: { airtmSlice },
+  reducer: {
+    airtm: airtmReducer,
+  },
 });
 
 export default Store;
